@@ -16,15 +16,8 @@ const images = [
 
   const galleryList = document.querySelector('.gallery');
 
-  let markup = '';
-
-  images.forEach(img => {
-    markup = images
+  let markup = images
     .map(img => `<li class = 'gallery__item'><img class ='gallery__img' src ='${img.url}' alt='${img.alt} width= '550' height = '550''></li>`)
     .join('');
-  });
   
-
   galleryList.insertAdjacentHTML("afterbegin", markup);
-
-
